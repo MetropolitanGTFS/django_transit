@@ -1,2 +1,2 @@
-django-transit
+django_transit
 ============

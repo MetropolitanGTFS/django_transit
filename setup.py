@@ -6,14 +6,14 @@ README = open(os.path.join(here, 'README.rst')).read()
 
 
 setup(
-    name='django-transit',
+    name='django_transit',
     version='0.0',
-    packages=['django-transit'],
+    packages=['django_transit'],
     description='a django transit implementation',
     long_description=README,
     author='Matteo SCARPA',
     author_email='me@fundor333.com',
-    url='https://github.com/fundor333/django-transit/',
+    url='https://github.com/fundor333/django_transit/',
     license='MIT',
     install_requires=[
         'Django>2.0',

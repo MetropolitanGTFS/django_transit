@@ -1,5 +1,5 @@
 INSTALLED_APPS = (
-    'django-transit',
+    'django_transit',
 )
 DATABASES = {
     'default': {

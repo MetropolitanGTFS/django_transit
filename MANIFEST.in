@@ -1,2 +1,2 @@
 include *.txt *.ini *.cfg *.rst
-recursive-include django-transit *.ico *.png *.css *.gif *.jpg *.txt *.js *.html *.xml
+recursive-include django_transit *.ico *.png *.css *.gif *.jpg *.txt *.js *.html *.xml
