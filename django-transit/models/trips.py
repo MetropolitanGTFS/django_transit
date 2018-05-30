@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import CharField, DecimalField, URLField, ForeignKeyField, IntegerField, PositiveIntegerField
+from django.db.models import CharField, IntegerField, ForeignKey
 
 DIRECTION_ID_FIELD = {
     (0, "Travel in one direction"),
@@ -8,7 +8,8 @@ DIRECTION_ID_FIELD = {
 
 WHEELCHAIR_ACCESSIBLE_FIELD = {
     (0, "Indicates that there is no accessibility information for the trip"),
-    (1, "Indicates that the vehicle being used on this particular trip can accommodate at least one rider in a wheelchair"),
+    (1,
+     "Indicates that the vehicle being used on this particular trip can accommodate at least one rider in a wheelchair"),
     (2, "Indicates that no riders in wheelchairs can be accommodated on this trip"),
 }
 
@@ -20,7 +21,7 @@ BIKES_ALLOWED_FIELD = {
 
 
 class Trip(models.Model):
-    route_id = models.ForeignKeyField(
+    route_id = ForeignKey(
         'Route', related_name='route_id', on_delete=models.CASCADE)
     service_id = CharField(max_length=300, unique=True)
     trip_id = CharField(max_length=300, primary_key=True)

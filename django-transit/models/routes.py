@@ -1,6 +1,6 @@
 from django.db import models
-from django.db.models import CharField, DecimalField, URLField, ForeignKey, IntegerField, PositiveIntegerField
-from . import Agency
+from django.db.models import CharField, URLField, IntegerField, PositiveIntegerField, ForeignKey
+from .agency import Agency
 
 ROUTE_TYPE_FIELD = {
     (0, "Tram, Streetcar, Light rail. Any light rail or street level system within a metropolitan area"),
@@ -14,9 +14,9 @@ ROUTE_TYPE_FIELD = {
 }
 
 
-class Route(models.Models):
+class Route(models.Model):
     route_id = IntegerField(primary_key=True)
-    agency_id = ForeignKeyField(Agency, on_delete=models.CASCADE)
+    agency_id = ForeignKey(Agency, on_delete=models.CASCADE)
     route_short_name = CharField(max_length=200)
     route_long_name = CharField(max_length=400)
     route_desc = CharField(max_length=400, blank=True, null=True)

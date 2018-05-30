@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import CharField, DecimalField, URLField, ForeignKeyField, IntegerField
+from django.db.models import CharField, DecimalField, URLField, IntegerField, ForeignKey
 
 WHEELCHAIR_BOARDING_FIELD = (
     (0, 'No accessibility information for the stop'),
@@ -18,7 +18,7 @@ class Stop(models.Model):
     zone_id = CharField(max_length=40, blank=True, null=True)
     stop_url = URLField(blank=True, null=True)
     location_type = CharField(max_length=1, blank=True, null=True)
-    parent_station = ForeignKeyField('Stop', on_delete=models.CASCADE,)
+    parent_station = ForeignKey('Stop', on_delete=models.CASCADE, )
     stop_timezone = CharField(max_length=6, blank=True, null=True)
     wheelchair_boarding = IntegerField(
         choices=WHEELCHAIR_BOARDING_FIELD,
