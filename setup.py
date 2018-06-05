@@ -13,7 +13,7 @@ setup(
     long_description=README,
     author='Matteo SCARPA',
     author_email='me@fundor333.com',
-    url='https://gitea.fundor333.com/Fundor333/django_transit',
+    url='https://gitea.fundor333.com/MetropolitanGTFS/django_transit',
     license='MIT',
     install_requires=[
         'Django>2.0',
