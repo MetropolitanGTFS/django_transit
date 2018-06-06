@@ -10,6 +10,7 @@ django = ">=2.0"
 pylint = "*"
 "autopep8" = "*"
 rope = "*"
+black = "*"
 
 [requires]
 python_version = "3.6"

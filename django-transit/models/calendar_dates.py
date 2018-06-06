@@ -8,7 +8,7 @@ EXCEPTION_TYPE_FIELD = {
 
 EXCEPTION_TYPE_DICTIONARY = {
     0: "Removed for the specified date",
-    2: "Service is available"
+    2: "Service is available",
 }
 
 

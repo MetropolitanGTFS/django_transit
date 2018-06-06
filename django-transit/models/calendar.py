@@ -1,15 +1,9 @@
 from django.db import models
 from django.db.models import DateField, IntegerField
 
-DAY_FIELD = {
-    (0, "Service is not available"),
-    (1, "Service is available"),
-}
+DAY_FIELD = {(0, "Service is not available"), (1, "Service is available")}
 
-DAY_DICTIONARY = {
-    0: "Service is not available",
-    1: "Service is available"
-}
+DAY_DICTIONARY = {0: "Service is not available", 1: "Service is available"}
 
 
 class Route(models.Model):

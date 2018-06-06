@@ -2,20 +2,18 @@ import os
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.rst')).read()
+README = open(os.path.join(here, "README.rst")).read()
 
 
 setup(
-    name='django_transit',
-    version='0.0',
-    packages=['django_transit'],
-    description='a django transit implementation',
+    name="django_transit",
+    version="0.0",
+    packages=["django_transit"],
+    description="a django transit implementation",
     long_description=README,
-    author='Matteo SCARPA',
-    author_email='me@fundor333.com',
-    url='https://gitea.fundor333.com/MetropolitanGTFS/django_transit',
-    license='MIT',
-    install_requires=[
-        'Django>2.0',
-    ]
+    author="Matteo SCARPA",
+    author_email="me@fundor333.com",
+    url="https://gitea.fundor333.com/MetropolitanGTFS/django_transit",
+    license="MIT",
+    install_requires=["Django>2.0"],
 )
