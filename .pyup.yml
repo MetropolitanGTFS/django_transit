@@ -1,3 +1,5 @@
 requirements:
  - Pipfile
  - Pipfile.lock
+
+branch: master, developer
